@@ -11,7 +11,7 @@
 
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-
+import styles from './styles.module.css'
 export default function Dashboard() {
   const router = useRouter()
   const jumt = () => {
@@ -19,10 +19,12 @@ export default function Dashboard() {
   }
   return (
     <>
-      <h2>dashboard page</h2>
+      <h2 className={styles.dashboard}>dashboard page</h2>
       <ul>
         <li>
-          <Link href="/list/1">列表项1</Link>
+          <Link href="/list/1" className="underline m-20 text-blue-500">
+            列表项1
+          </Link>
         </li>
         <li>
           <Link href="/list/2">列表项2</Link>
