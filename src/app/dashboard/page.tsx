@@ -30,6 +30,9 @@ export default function Dashboard() {
           <Link href="/list/2">列表项2</Link>
         </li>
         <button onClick={jumt}>列表项3</button>
+        <button className="btn btn-primary" onClick={jumt}>
+          列表项4
+        </button>
       </ul>
     </>
   )
